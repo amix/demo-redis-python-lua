@@ -1,11 +1,9 @@
-## How to use Redis+Lua from Python
-
 This is a small demo that showcases how to use Redis and Lua from Python to increase performance at least 3x.
 
 This is a recommend optimization strategy when you create custom data structures on top of Redis.
 
 
-### Benchmark of a simple incr command
+## Benchmark of a simple incr command
 I've re-implemented `incr` in Python and in Python+Lua. Below you can see a benchmark of 300.000 incr commands. The Lua version performs about 3 times better. Both versions support nice things like atomicity. 
 
 
